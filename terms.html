@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volure — Terms of Service</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0F0F1A;
+      color: #D1D1E0;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    header {
+      background-color: #1A1A2E;
+      border-bottom: 1px solid #2A2A40;
+      padding: 24px 0;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #6C3FA0;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #A0A0B8;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 24px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: #6C3FA0; }
+    nav a.active { color: #6C3FA0; font-weight: 600; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #6B7280;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #2A2A40;
+    }
+
+    .intro-box {
+      background-color: #1A1A2E;
+      border: 1px solid #6C3FA0;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 48px;
+      color: #C4B5DC;
+      font-size: 15px;
+    }
+
+    .intro-box strong {
+      color: #FFFFFF;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 3px solid #6C3FA0;
+    }
+
+    p {
+      color: #A0A0B8;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      color: #A0A0B8;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    li strong { color: #D1D1E0; }
+
+    .section-card {
+      background-color: #1A1A2E;
+      border: 1px solid #2A2A40;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .warning-card {
+      background-color: #1C1410;
+      border: 1px solid #F59E0B;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .warning-card p {
+      color: #D4A850;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .warning-card strong {
+      color: #F59E0B;
+    }
+
+    .pro-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    .pro-table th {
+      background-color: #252540;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: left;
+      padding: 12px 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .pro-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #A0A0B8;
+      border-bottom: 1px solid #2A2A40;
+      vertical-align: top;
+    }
+
+    .pro-table tr:last-child td { border-bottom: none; }
+    .pro-table tr:nth-child(even) td { background-color: #171727; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-free { background-color: #252540; color: #A0A0B8; }
+    .badge-pro  { background-color: #6C3FA0; color: #FFFFFF; }
+
+    .contact-box {
+      background: linear-gradient(135deg, #1A1A2E 0%, #252540 100%);
+      border: 1px solid #6C3FA0;
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      color: #FFFFFF;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p { margin-bottom: 20px; font-size: 14px; }
+
+    .contact-box a {
+      background-color: #6C3FA0;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-block;
+      transition: background-color 0.2s;
+    }
+
+    .contact-box a:hover { background-color: #4A2870; }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      background-color: #0A0A14;
+      border-top: 1px solid #2A2A40;
+      color: #4B4B60;
+      font-size: 13px;
+    }
+
+    footer a { color: #6C3FA0; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .page-title { font-size: 26px; }
+      h2 { font-size: 17px; }
+      .header-inner { flex-direction: column; gap: 12px; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; }
+      nav a { margin: 4px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">VOLURE</a>
+      <nav>
+        <a href="index.html">Privacy Policy</a>
+        <a href="terms.html" class="active">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h1 class="page-title">Terms of Service</h1>
+    <p class="updated">Last updated: April 2026 &nbsp;·&nbsp; Effective: April 2026</p>
+
+    <div class="intro-box">
+      Please read these Terms of Service carefully before using Volure. By creating an account or using the app, you agree to be bound by these terms. If you do not agree, do not use Volure. <strong>These are plain-language terms — we have tried to make them as clear and readable as possible.</strong>
+    </div>
+
+    <!-- 1. ACCEPTANCE -->
+    <h2>1. Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") govern your use of the Volure mobile application ("the App"), operated by Volure ("we", "us", or "our"). By downloading, installing, or using the App, you agree to these Terms.</p>
+    <p>We may update these Terms from time to time. If we make material changes, we will notify you in the app or by email before the changes take effect. Continued use of the App after that constitutes acceptance of the new Terms.</p>
+
+    <!-- 2. ELIGIBILITY -->
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 13 years old to use Volure. By using the App, you represent that you meet this age requirement. If you are under 18, you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
+
+    <!-- 3. YOUR ACCOUNT -->
+    <h2>3. Your Account</h2>
+    <ul>
+      <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+      <li>You are responsible for all activity that occurs under your account.</li>
+      <li>You must provide accurate information when creating your account and keep it up to date.</li>
+      <li>You may not share your account with others or create accounts on behalf of others without their consent.</li>
+      <li>If you believe your account has been compromised, contact us immediately at <strong>support@volure.app</strong>.</li>
+    </ul>
+
+    <!-- 4. FREE AND PRO TIERS -->
+    <h2>4. Free and Pro Tiers</h2>
+    <p>Volure is available in a free tier and a paid Pro tier. The current features included in each tier are:</p>
+
+    <table class="pro-table">
+      <tr>
+        <th>Feature</th>
+        <th>Free</th>
+        <th>Pro</th>
+      </tr>
+      <tr>
+        <td>Collection size</td>
+        <td>Up to 100 items</td>
+        <td>Unlimited</td>
+      </tr>
+      <tr>
+        <td>Cover scanning</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>ISBN barcode scanning</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>Wishlist</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>Missing volume detection</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>Release calendar</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>Public profile</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>Data export (CSV / JSON)</td>
+        <td><span class="badge badge-free">Included</span></td>
+        <td><span class="badge badge-pro">Included</span></td>
+      </tr>
+      <tr>
+        <td>AI-enhanced scan (Gemini)</td>
+        <td>—</td>
+        <td><span class="badge badge-pro">Pro only</span></td>
+      </tr>
+      <tr>
+        <td>Reading Pile</td>
+        <td>—</td>
+        <td><span class="badge badge-pro">Pro only</span></td>
+      </tr>
+      <tr>
+        <td>Series Discovery</td>
+        <td>2 results preview</td>
+        <td><span class="badge badge-pro">Full access</span></td>
+      </tr>
+      <tr>
+        <td>Publisher & genre analytics</td>
+        <td>—</td>
+        <td><span class="badge badge-pro">Pro only</span></td>
+      </tr>
+    </table>
+
+    <p>We reserve the right to adjust which features are available on each tier. If we remove a feature from the Pro tier that was previously included, we will notify active Pro subscribers in advance.</p>
+
+    <!-- 5. SUBSCRIPTIONS AND BILLING -->
+    <h2>5. Subscriptions and Billing</h2>
+    <p>Volure Pro is available as a monthly subscription, an annual subscription, or a one-time lifetime purchase. All billing is handled by Apple (App Store) or Google (Play Store) depending on where you downloaded the app.</p>
+
+    <div class="section-card">
+      <ul>
+        <li><strong>Subscriptions renew automatically</strong> unless you cancel at least 24 hours before the end of the current billing period.</li>
+        <li><strong>You manage your subscription</strong> through your Apple ID or Google Play account settings — not through Volure directly.</li>
+        <li><strong>Refunds</strong> are subject to Apple's or Google's refund policies. We cannot issue refunds directly.</li>
+        <li><strong>Lifetime purchases</strong> are one-time payments that grant Pro access indefinitely for the current device platform. A lifetime purchase on iOS does not include Android access.</li>
+        <li><strong>Free trial periods</strong>, if offered, convert to a paid subscription unless cancelled before the trial ends.</li>
+        <li><strong>Price changes:</strong> We will give at least 30 days notice before changing subscription prices.</li>
+      </ul>
+    </div>
+
+    <div class="warning-card">
+      <p><strong>Note on cancellations:</strong> Cancelling your Pro subscription stops future charges but does not provide a refund for the current billing period. You will retain Pro access until the end of the period you have already paid for.</p>
+    </div>
+
+    <!-- 6. ACCEPTABLE USE -->
+    <h2>6. Acceptable Use</h2>
+    <p>You agree not to use Volure to:</p>
+    <ul>
+      <li>Violate any applicable law or regulation.</li>
+      <li>Upload or share content that is illegal, harmful, threatening, abusive, defamatory, or obscene.</li>
+      <li>Attempt to gain unauthorized access to other users' accounts or data.</li>
+      <li>Reverse engineer, decompile, or disassemble any part of the App.</li>
+      <li>Use automated tools, bots, or scrapers to extract data from the App or its underlying APIs.</li>
+      <li>Use the App in any way that could damage, disable, overburden, or impair our infrastructure.</li>
+      <li>Attempt to circumvent the free tier limits or Pro subscription system.</li>
+      <li>Impersonate another person or entity in your public profile.</li>
+    </ul>
+
+    <!-- 7. USER CONTENT -->
+    <h2>7. User-Generated Content</h2>
+    <p>Volure allows you to enter content including book titles, notes, ratings, usernames, and bios. You retain ownership of content you create. By submitting content to Volure, you grant us a limited, non-exclusive license to store and display that content solely for the purpose of providing the service to you.</p>
+    <p>You are responsible for ensuring that any content you enter does not violate the rights of any third party. We do not review user-entered content but reserve the right to remove content that violates these Terms.</p>
+
+    <!-- 8. PUBLIC PROFILES -->
+    <h2>8. Public Profiles</h2>
+    <p>If you choose to make your profile public, your username, bio, and a selection of your recent collection items become visible to anyone with the link. This is an opt-in feature that is off by default.</p>
+    <ul>
+      <li>You are responsible for the content of your public profile.</li>
+      <li>Do not include personal information in your bio that you would not want to be publicly visible.</li>
+      <li>We reserve the right to disable any public profile that violates these Terms.</li>
+    </ul>
+
+    <!-- 9. AFFILIATE LINKS -->
+    <h2>9. Affiliate Links & Commissions</h2>
+    <p>Volure includes links to third-party retailers (Amazon, Barnes & Noble, RightStuf, and others) for books in your collection and wishlist. Some of these links are affiliate links — if you make a purchase through them, Volure may earn a small commission at no additional cost to you.</p>
+    <p>Affiliate links are clearly associated with buy or price-comparison actions. We only link to legitimate retailers and do not manipulate or misrepresent prices.</p>
+
+    <!-- 10. THIRD PARTY SERVICES -->
+    <h2>10. Third-Party Services</h2>
+    <p>Volure integrates with third-party APIs and services including MangaDex, Google Books, Google Cloud Vision, Google Gemini, Supabase, RevenueCat, and Sentry. Your use of these services through Volure is subject to their respective terms of service. We are not responsible for the availability, accuracy, or conduct of any third-party service.</p>
+
+    <!-- 11. INTELLECTUAL PROPERTY -->
+    <h2>11. Intellectual Property</h2>
+    <p>The Volure name, logo, app design, and all original content in the App are owned by Volure and protected by applicable intellectual property laws. You may not use our name, logo, or branding without our written permission.</p>
+    <p>Book cover images, titles, and metadata displayed in the App are the property of their respective publishers and authors. We display this information under fair use for the purpose of cataloging and are not the copyright holders of any book content.</p>
+
+    <!-- 12. DISCLAIMERS -->
+    <h2>12. Disclaimers</h2>
+    <div class="warning-card">
+      <p><strong>The App is provided "as is".</strong> We make no warranties, express or implied, regarding the App's availability, accuracy, or fitness for a particular purpose. Book metadata — including titles, authors, publishers, volume counts, and cover images — is sourced from third-party APIs and may occasionally be incorrect or incomplete. We are not responsible for errors in third-party data.</p>
+    </div>
+    <p style="margin-top: 16px;">Price information, where displayed, is sourced from third-party services and may not reflect current retail prices. Always confirm prices directly with the retailer before purchasing.</p>
+
+    <!-- 13. LIMITATION OF LIABILITY -->
+    <h2>13. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Volure shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App, even if we have been advised of the possibility of such damages.</p>
+    <p>Our total liability to you for any claim arising from your use of Volure shall not exceed the amount you paid us in the 12 months preceding the claim, or $10 USD, whichever is greater.</p>
+
+    <!-- 14. TERMINATION -->
+    <h2>14. Termination</h2>
+    <p>You may stop using Volure and delete your account at any time. See <strong>Settings → Account → Delete Account</strong> in the app, or email <strong>support@volure.app</strong>.</p>
+    <p>We reserve the right to suspend or terminate your account if you violate these Terms. In cases of serious violations (such as attempting to access other users' data), we may terminate without notice. For less serious violations, we will attempt to notify you first.</p>
+    <p>Upon termination, your right to use the App ceases immediately. Data deletion follows the process described in our Privacy Policy.</p>
+
+    <!-- 15. GOVERNING LAW -->
+    <h2>15. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the United States. Any disputes arising from these Terms or your use of Volure will be resolved through binding arbitration rather than in court, except that you may assert claims in small claims court if your claims qualify.</p>
+
+    <!-- 16. CHANGES -->
+    <h2>16. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. When we do, we will update the "Last updated" date at the top of this page. For material changes, we will notify you via an in-app notice or email at least 14 days before the changes take effect. Your continued use of the App after that date constitutes your acceptance of the updated Terms.</p>
+
+    <!-- 17. CONTACT -->
+    <h2>17. Contact</h2>
+    <p>If you have any questions about these Terms, please contact us:</p>
+
+    <div class="contact-box">
+      <h3>Questions about these Terms?</h3>
+      <p>We respond to all inquiries within 2 business days.</p>
+      <a href="mailto:support@volure.app">support@volure.app</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Volure &nbsp;·&nbsp; <a href="index.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp; <a href="mailto:support@volure.app">Contact</a></p>
+  </footer>
+
+</body>
+</html>
